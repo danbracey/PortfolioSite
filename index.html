@@ -2,23 +2,44 @@
 <html lang="en">
 <head>
     <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        laravel: '#F9322C',
+                        subtitle: '#565454',
+                        linkedin: '#0A66C2'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body>
-    <section> <!-- Float to left -->
-        Dan Bracey
-    </section>
-    <aside> <!-- Float to right -->
-        <!-- GitHub Link -->
-        <!-- LinkedIn -->
-    </aside>
-    <h1>The backend Laravel Developer</h1>
-    <h2>for your next project</h2>
-    <p>Specialising in backend web development with Laravel, but with a passion for honing my skills in all areas!</p>
-    <div>
-        <a href="mailto:24969761@edgehill.ac.uk">Contact Me</a>
-        <a href="https://github.com/danbracey">My GitHub</a>
-    </div>
-    <a href="https://www.linkedin.com/in/danbracey/">Connect with me on LinkedIn!</a>
+    <header class="w-full">
+        <section class="float-left"> <!-- Float to left -->
+            Dan Bracey
+        </section>
+        <aside class="float-right"> <!-- Float to right -->
+            <!-- GitHub Link -->
+            <!-- LinkedIn -->
+        </aside>
+    </header>
+    <main class="h-[80vh] flex items-center justify-center flex-col">
+        <h1 class="text-2xl md:text-5xl lg:text-6xl font-bold">The backend Laravel Developer</h1>
+        <h2 class="text-2xl md:text-5xl lg:text-6xl text-laravel font-bold mb-5">for your next project</h2>
+        <p class="text-subtitle">Specialising in backend web development with Laravel, but with a passion for honing my skills in all areas!</p>
+        <div class="my-5">
+            <a href="mailto:24969761@edgehill.ac.uk" class="bg-laravel border-laravel border-2 text-white px-4 py-2 font-bold uppercase">Contact Me</a>
+            <a href="https://github.com/danbracey" class="border-laravel border-2 px-4 py-2 font-bold uppercase">My GitHub</a>
+        </div>
+        <a href="https://www.linkedin.com/in/danbracey/" class="bg-linkedin text-white px-4 py-2 font-medium rounded-full flex gap-2 px-11" target="_blank">
+            <img src="linkedin.svg" alt="LinkedIn logo" class="fill-linkedin">
+            Connect with me on LinkedIn!
+        </a>
+    </main>
     <section>
         <h3>My Projects</h3>
         <!-- Images -->
