@@ -19,9 +19,11 @@
 </head>
 <body>
     <header class="w-full py-5 px-5 mb-6">
-        <section class="float-left lg:text-2xl font-bold flex gap-2"> <!-- Float to left -->
-            <img src="dan.jpeg" alt="A picture of me" class="rounded-full" width="40px">
-            Dan Bracey
+        <section class="float-left lg:text-2xl font-bold"> <!-- Float to left -->
+            <a href="index.html" class="flex gap-2">
+                <img src="dan.jpeg" alt="A picture of me" class="rounded-full" width="40">
+                Dan Bracey
+            </a>
         </section>
         <aside class="float-right flex gap-2"> <!-- Float to right -->
             <a href="https://github.com/danbracey/" class="text-white font-medium rounded-full flex gap-2 px-2" target="_blank">
@@ -32,8 +34,8 @@
             </a>
         </aside>
     </header>
-    <main class="h-[80vh] flex items-center justify-center flex-col">
-        <h1 class="text-2xl md:text-5xl lg:text-6xl font-bold">The backend Laravel Developer</h1>
+    <main class="h-[70vh] flex items-center justify-center flex-col">
+        <h1 class="text-2xl md:text-5xl lg:text-6xl font-bold">The backend Laravel developer</h1>
         <h2 class="text-2xl md:text-5xl lg:text-6xl text-laravel font-bold mb-5">for your next project</h2>
         <p class="text-subtitle">Specialising in backend web development with Laravel, but with a passion for honing my skills in all areas!</p>
         <div class="my-5">
@@ -46,8 +48,27 @@
         </a>
     </main>
     <section>
-        <h3>My Projects</h3>
-        <!-- Images -->
+        <h3 class="lg:text-3xl font-semibold ml-10 mb-2">My Projects</h3>
+        <div class="overflow-x-scroll flex gap-5">
+            <a href="projects.html#quiz-society">
+                <img src="project_compressed_images/quiz-society.png" width="400" height="200" class="border-2 border-laravel" alt="Quiz Society Homepage">
+            </a>
+            <a href="projects.html#dubai-landscapes">
+                <img src="project_compressed_images/dubai-landscapes.png" width="400" height="200" class="border-2 border-laravel" alt="Dubai Landscapes Homepage">
+            </a>
+            <a href="projects.html#mortgage-calculator">
+                <img src="project_compressed_images/mortgage-calculator.png" width="400" height="200" class="border-2 border-laravel" alt="Mortgage calculator Homepage">
+            </a>
+            <a href="projects.html#truckersmp-suggestions">
+                <img src="project_compressed_images/truckersmp-suggestions.png" width="400" height="200" class="border-2 border-laravel" alt="TMP Suggestions Homepage">
+            </a>
+            <a href="projects.html#nordico-nights">
+                <img src="project_compressed_images/nordico.png" width="400" height="200" class="border-2 border-laravel" alt="Nordico Nights Homepage">
+            </a>
+            <a href="projects.html#edgelink-bus-bot">
+                <img src="project_compressed_images/edgelink.png" width="400" height="200" class="border-2 border-laravel" alt="An example of the bus tracker working in Discord">
+            </a>
+        </div>
     </section>
     <section id="skills">
         <img src="#" alt="my-skills">
