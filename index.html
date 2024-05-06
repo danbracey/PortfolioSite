@@ -36,7 +36,7 @@
     </header>
     <main class="h-[70vh] flex items-center justify-center flex-col">
         <h1 class="text-2xl md:text-5xl lg:text-6xl font-bold">The backend Laravel developer</h1>
-        <h2 class="text-2xl md:text-5xl lg:text-6xl text-laravel font-bold mb-5">for your next project</h2>
+        <h2 class="text-2xl md:text-5xl lg:text-6xl text-laravel font-bold mb-5" id="tagline">for your next project</h2>
         <p class="text-subtitle">Specialising in backend web development with Laravel, but with a passion for honing my skills in all areas!</p>
         <div class="my-5">
             <a href="mailto:24969761@edgehill.ac.uk" class="bg-laravel border-laravel border-2 text-white px-4 py-2 font-bold uppercase">Contact Me</a>
@@ -96,4 +96,16 @@
         <img src="edgehillcu.jpg" alt="A picture of me along with the Edge Hill Christian Union" class="rotate-2 mx-auto h-4/5" width="600">
     </section>
 </body>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script>
+    //Typewriter code inspired from https://github.com/tameemsafi/typewriterjs
+    // Safi, T. (2024). tameemsafi/typewriterjs. [online] GitHub. Available at: https://github.com/tameemsafi/typewriterjs [Accessed 6 May 2024].
+
+    const tagline = document.getElementById('tagline');
+
+    let typewriter = new Typewriter(tagline, {
+        strings: ['for your next project', 'for your business', 'for your API'],
+        autoStart: true,
+    });
+</script>
 </html>
