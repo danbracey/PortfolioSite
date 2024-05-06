@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        laravel: '#F9322C',
+                        subtitle: '#565454',
+                        linkedin: '#0A66C2'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="w-full py-5 px-5 mb-6">
+        <section class="float-left lg:text-2xl font-bold"> <!-- Float to left -->
+            <a href="index.html" class="flex gap-2">
+                <img src="dan.jpeg" alt="A picture of me" class="rounded-full" width="40">
+                Dan Bracey
+            </a>
+        </section>
+        <aside class="float-right flex gap-2"> <!-- Float to right -->
+            <a href="https://github.com/danbracey/" class="text-white font-medium rounded-full flex gap-2 px-2" target="_blank">
+                <img src="github.svg" alt="GitHub logo">
+            </a>
+            <a href="https://www.linkedin.com/in/danbracey/" class="bg-linkedin text-white font-medium rounded-full flex gap-2 px-2" target="_blank">
+                <img src="linkedin.svg" alt="LinkedIn logo" class="fill-linkedin">
+            </a>
+        </aside>
+    </header>
+    <main class="h-[20vh] flex items-center justify-center flex-col mb-10">
+        <h1 class="text-2xl md:text-5xl lg:text-6xl font-bold pb-2">Featured Projects</h1>
+        <p class="text-subtitle">A selection of projects, with more available <a href="https://github.com/danbracey" class="text-laravel">on my GitHub!</a></p>
+    </main>
+    <section class="mx-5 md:mx-10 lg:mx-20">
+        <article class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-2 mb-5" id="quiz-society">
+            <img src="project_compressed_images/quiz-society.png" alt="Quiz Society - Homepage">
+            <aside class="">
+                <h2 class="text-3xl font-semibold mb-2">EHU Quiz Society</h2>
+                <p class="mb-5">
+                    This quiz application website uses real-time messaging (Pusher API) to deliver quiz questions to clients and handle responses.
+                </p>
+                <a href="https://github.com/EHU-Quiz-Party-Game-Society/quizsociety" target="_blank" class="bg-laravel border-laravel border-2 text-white px-4 py-2 font-bold uppercase">View project GitHub</a>
+            </aside>
+        </article>
+        <article class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-2 mb-5" id="dubai-landscapes">
+            <img src="project_compressed_images/dubai-landscapes.png" alt="Dubai Landscapes project homepage">
+            <aside class="">
+                <h2 class="text-3xl font-semibold mb-2">Dubai Landscapes</h2>
+                <p class="mb-5">
+                    A portfolio site for Adtrak, based on a fictional landscaping company based in Dubai.
+                    Requirements for this site included landscaping services, gallery, Frequently Asked Questions and a Contact Us page.
+                    Images were provided by the client.
+                </p>
+                <a href="https://github.com/danbracey/Dubai-Landscapes" target="_blank" class="bg-laravel border-laravel border-2 text-white px-4 py-2 font-bold uppercase">View project GitHub</a>
+            </aside>
+        </article>
+        <article class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-2 mb-5" id="edgelink-bus-bot">
+            <img src="project_compressed_images/edgelink.png" alt="An example of the Edge Link bus tracker">
+            <aside class="">
+                <h2 class="text-3xl font-semibold mb-2">Edge Link bus tracker</h2>
+                <p class="mb-5">
+                    This project tracks the location of the Edge Link Bus (EL1) and sends the data to Discord
+                </p>
+                <a href="https://github.com/danbracey/edgelink-bus-bot" target="_blank" class="bg-laravel border-laravel border-2 text-white px-4 py-2 font-bold uppercase">View project GitHub</a>
+            </aside>
+        </article>
+        <article class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-2 mb-5" id="mortgage-calculator">
+            <img src="project_compressed_images/mortgage-calculator.png" alt="The mortgage calculator widget">
+            <aside class="">
+                <h2 class="text-3xl font-semibold mb-2">Mortgage Calculator</h2>
+                <p class="mb-5">
+                    A front-end mortgage calculator written in HTML and CSS, with Highcharts JS plugin
+                </p>
+                <a href="https://github.com/danbracey/Mortgage-Calculator" target="_blank" class="bg-laravel border-laravel border-2 text-white px-4 py-2 font-bold uppercase">View project GitHub</a>
+            </aside>
+        </article>
+        <article class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-2 mb-5" id="truckersmp-suggestions">
+            <img src="project_compressed_images/tmp-suggestions.png" alt="TtruckersMP suggestions - Homepage">
+            <aside class="">
+                <h2 class="text-3xl font-semibold mb-2">Suggestions website</h2>
+                <p class="mb-5">
+                    This coding project showcases the hypothetical scenario of moving Suggestions for the TruckersMP project to the Website instead of the forum
+                </p>
+                <a href="https://github.com/danbracey/tmp-suggestions" target="_blank" class="bg-laravel border-laravel border-2 text-white px-4 py-2 font-bold uppercase">View project GitHub</a>
+            </aside>
+        </article>
+    </section>
+</body>
+</html>
