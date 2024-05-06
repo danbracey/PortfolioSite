@@ -35,10 +35,63 @@
             </a>
         </aside>
     </header>
-    <main class="h-[20vh] flex items-center justify-center flex-col">
-        <h1 class="text-2xl md:text-5xl lg:text-6xl font-bold pb-2">My Projects</h1>
+    <main class="h-[20vh] flex items-center justify-center flex-col mb-10">
+        <h1 class="text-2xl md:text-5xl lg:text-6xl font-bold pb-2">Featured Projects</h1>
         <p class="text-subtitle">A selection of projects, with more available <a href="https://github.com/danbracey" class="text-laravel">on my GitHub!</a></p>
     </main>
-    <!-- Split into two columns, images on one side, blurb on right with link to repo, as per Figma design -->
+    <section class="mx-5 md:mx-10 lg:mx-20">
+        <article class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-2 mb-5" id="quiz-society">
+            <img src="project_compressed_images/quiz-society.png" alt="Quiz Society - Homepage">
+            <aside class="">
+                <h2 class="text-3xl font-semibold mb-2">EHU Quiz Society</h2>
+                <p class="mb-5">
+                    This quiz application website uses real-time messaging (Pusher API) to deliver quiz questions to clients and handle responses.
+                </p>
+                <a href="https://github.com/EHU-Quiz-Party-Game-Society/quizsociety" target="_blank" class="bg-laravel border-laravel border-2 text-white px-4 py-2 font-bold uppercase">View project GitHub</a>
+            </aside>
+        </article>
+        <article class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-2 mb-5" id="dubai-landscapes">
+            <img src="project_compressed_images/dubai-landscapes.png" alt="Dubai Landscapes project homepage">
+            <aside class="">
+                <h2 class="text-3xl font-semibold mb-2">Dubai Landscapes</h2>
+                <p class="mb-5">
+                    A portfolio site for Adtrak, based on a fictional landscaping company based in Dubai.
+                    Requirements for this site included landscaping services, gallery, Frequently Asked Questions and a Contact Us page.
+                    Images were provided by the client.
+                </p>
+                <a href="https://github.com/danbracey/Dubai-Landscapes" target="_blank" class="bg-laravel border-laravel border-2 text-white px-4 py-2 font-bold uppercase">View project GitHub</a>
+            </aside>
+        </article>
+        <article class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-2 mb-5" id="edgelink-bus-bot">
+            <img src="project_compressed_images/edgelink.png" alt="An example of the Edge Link bus tracker">
+            <aside class="">
+                <h2 class="text-3xl font-semibold mb-2">Edge Link bus tracker</h2>
+                <p class="mb-5">
+                    This project tracks the location of the Edge Link Bus (EL1) and sends the data to Discord
+                </p>
+                <a href="https://github.com/danbracey/edgelink-bus-bot" target="_blank" class="bg-laravel border-laravel border-2 text-white px-4 py-2 font-bold uppercase">View project GitHub</a>
+            </aside>
+        </article>
+        <article class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-2 mb-5" id="mortgage-calculator">
+            <img src="project_compressed_images/mortgage-calculator.png" alt="The mortgage calculator widget">
+            <aside class="">
+                <h2 class="text-3xl font-semibold mb-2">Mortgage Calculator</h2>
+                <p class="mb-5">
+                    A front-end mortgage calculator written in HTML and CSS, with Highcharts JS plugin
+                </p>
+                <a href="https://github.com/danbracey/Mortgage-Calculator" target="_blank" class="bg-laravel border-laravel border-2 text-white px-4 py-2 font-bold uppercase">View project GitHub</a>
+            </aside>
+        </article>
+        <article class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-2 mb-5" id="truckersmp-suggestions">
+            <img src="project_compressed_images/tmp-suggestions.png" alt="TtruckersMP suggestions - Homepage">
+            <aside class="">
+                <h2 class="text-3xl font-semibold mb-2">Suggestions website</h2>
+                <p class="mb-5">
+                    This coding project showcases the hypothetical scenario of moving Suggestions for the TruckersMP project to the Website instead of the forum
+                </p>
+                <a href="https://github.com/danbracey/tmp-suggestions" target="_blank" class="bg-laravel border-laravel border-2 text-white px-4 py-2 font-bold uppercase">View project GitHub</a>
+            </aside>
+        </article>
+    </section>
 </body>
 </html>
